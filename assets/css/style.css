@@ -36,7 +36,9 @@ header {
     width: 100%;
     z-index: 10;
     transform: translateY(0);
-    transition: all .5s
+    transition: all .5s;
+    display: flex;
+    align-items: center;
 }
 
 header.compaq {
@@ -77,6 +79,22 @@ header.compaq .container {
     align-items: center
 }
 
+@media (max-width: 768px) {
+    .menubar {
+        display: none;
+    }
+
+    .menubar.active {
+        display: block;
+    }
+}
+
+@media (max-width: 769px) {
+    .menubar {
+        display: block;
+    }
+}
+
 .menubar li {
     margin: 0 15px
 }
@@ -104,12 +122,12 @@ header.compaq .container {
     position: absolute;
     background: #00cf5d;
     right: 0;
-    top: 8px;
     padding: 10px;
     line-height: 1;
     border-radius: 4px;
     color: #111a28;
-    display: none
+    display: none;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:768px) {
