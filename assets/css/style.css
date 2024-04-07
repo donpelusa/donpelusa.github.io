@@ -1398,6 +1398,10 @@ pre tt:before {
     color: #00cf5d
 }
 
+.portfolio-items .portfolio-img img {
+    width: 100%;
+}
+
 .portfolio-items .portfolio-img:after {
     position: absolute;
     content: "";
