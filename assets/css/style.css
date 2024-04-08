@@ -122,42 +122,42 @@ header.compaq .container {
     display: none
 }
 
-h1 bubble-text {
-  font-size: clamp(2rem, calc(2rem + 3.5vw), 8rem) !important;
-  color: hsl(0, 0%, 50%) !important;
-  user-select: none !important;
+.bubble-text {
+  font-size: clamp(2rem, calc(2rem + 3.5vw), 8rem);
+  color: hsl(0, 0%, 50%);
+  user-select: none;
 
   &.split-text {
-    display: inline-flex !important;
+    display: inline-flex;
   }
 
   & .split-char {
-    font-weight: 200 !important;
-    transition: font-weight 0.5s ease !important;
+    font-weight: 200;
+    transition: font-weight 0.5s ease;
 
     &:hover {
-      font-weight: var(--_fw-900) !important;
-      color: var(--_clr-900) !important;
+      font-weight: var(--_fw-900);
+      color: var(--_clr-900);
     }
 
     /* // right side */
     &:hover + .split-char {
-      font-weight: var(--_fw-700) !important;
-      color: var(--_clr-700) !important;
+      font-weight: var(--_fw-700);
+      color: var(--_clr-700);
     }
     &:hover + .split-char + .split-char {
-      font-weight: var(--_fw-400) !important;
-      color: var(--_clr-400) !important;
+      font-weight: var(--_fw-400);
+      color: var(--_clr-400);
     }
 
     /* // left side */
     &:has(+ .split-char:hover) {
-      font-weight: var(--_fw-700) !important;
-      color: var(--_clr-700) !important;
+      font-weight: var(--_fw-700);
+      color: var(--_clr-700);
     }
     &:has(+ .split-char + .split-char:hover) {
-      font-weight: var(--_fw-400) !important;
-      color: var(--_clr-400) !important;
+      font-weight: var(--_fw-400);
+      color: var(--_clr-400);
     }
   }
 }
