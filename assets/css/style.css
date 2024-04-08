@@ -123,7 +123,7 @@ header.compaq .container {
 }
 
 .bubble-text {
-  font-size: clamp(2rem, calc(2rem + 3.5vw), 8rem);
+  font-size: clamp(1.5rem, calc(1.5rem + 2.5vw), 6rem);
   color: hsl(0, 0%, 50%);
   user-select: none;
 
